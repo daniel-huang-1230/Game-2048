@@ -1,6 +1,6 @@
 # Project Overview
 
-This program is designed to act exactly the same as the famous game 2048. 
+This program is designed to act exactly the same as the famous **game 2048**. 
 It basically gives you a board and let you move around tiles with vales(powers of 2) on it. 
 When two adjacent tiles with the same value move in the given direction, the tiles would combine and merge into one tile. 
 You will earn score every time you merge two tiles. 
