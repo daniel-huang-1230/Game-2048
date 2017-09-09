@@ -1,6 +1,6 @@
 # Project Overview
 The goal of this project is for me to learn the basics of **Object Oriented Programming** and some **Java** syntax.
-The code is, naturally, way far from clean and efficient since it's one of the first few programs I wrote when I started learning how to code in 2016. I still would like to keep this repo public for future improvements, though.
+The code is, naturally, way far from clean and efficient since it's one of the first few programs I wrote back when I started learning how to code in 2016. I still would like to keep this repo public for future improvements, though.
 This program is designed to act exactly the same as the famous **game 2048**. 
 It basically gives you a board and let you move around tiles with vales(powers of 2) on it. 
 When two adjacent tiles with the same value move in the given direction, the tiles would combine and merge into one tile. 
