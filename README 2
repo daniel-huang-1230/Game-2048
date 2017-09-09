@@ -1,0 +1,69 @@
+*Name: Daniel Huang
+ *Login: cs8bwacy
+ *Date: 03/02/2016
+ *File: README
+ *Sources of Help: google
+ */
+Short Response ( 10 points ):
+Vim related Question:
+1. In vim, what command can you use to find and replace every instance of the 
+word fun with amazing? How would you replace only the first instance of fun 
+with amazing in each line?
+Q1: :%s/fun/amazing/g
+Q2: :%s/fun/amazing/
+Unix/Linux Questions:
+2. Suppose you are currently inside a directory and in there you want to make
+ a new directory called fooDir. And inside fooDir, you want another directory
+ called barDir. Using only a single mkdir command, how can you create a 
+directory called fooDir with a directory called barDir inside it?
+mkdir -p fooDir/barDir
+3. Give an example of how you would use a wildcard character (you can use it 
+with whichever command you want like rm, cat, ls, cp,  etc). Describe what 
+happens after you use it. 
+My example is: rm c?mp
+My result: deleting files using the rm command in the Unix/Linux variant that 
+contain c, mp, and any character in-between
+4. How can you run gvim through the command line to open all Java source code
+ files in the current directory, each file in its own tab?
+gvim -p *.java or vim -p *.java
+Java Question:
+5. What does the keyword static mean in regards to methods? Provide an example
+ use of a static method.
+Static methods can be invoked directly on the class, and it can also be called on 
+and object as well as non-static method.
+For example:
+public class Bicycle {
+        
+    private int cadence;
+    private int gear;
+    private int speed;
+    private int id;
+    private static int numberOfBicycles = 0;
+        
+    public Bicycle(int startCadence,
+                   int startSpeed,
+                   int startGear) {
+        gear = startGear;
+        cadence = startCadence;
+        speed = startSpeed;
+        id = ++numberOfBicycles;
+    }
+    public int getID() {
+        return id;
+    }
+    public static int getNumberOfBicycles() {
+        return numberOfBicycles;
+    }
+}		
+6. A high school student is trying to write a Java program that will draw
+ different shapes and in different possible colors. To do this, she has written
+ just one Java class called ShapeDrawer, which contains all the necessary 
+methods like drawRedCircle(), drawBlueCircle(), drawYellowSquare(), 
+drawGreenSquare(), and so on. Using object-oriented terminology, describe how
+ you can help the student improve her design.
+
+Basically  I would suggest her to think of all the shapes to have a hierarchical structure.
+For instance, square is a type of rectangle and rectangle belongs to a more general 
+shapes class.
+Then she can start from the top to write the generic methods that are common across
+its subclasses. The next step would be write separate files for each shape class and utilize the inheritance feature in java. In this fashion, she would be able to bundle things(methods and instance variables) together and make her codes more efficient.
